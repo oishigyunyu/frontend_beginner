@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  app:
+    build: docker
+    container_name: frontend_beginner
+    tty: true
+    volumes:
+      - ./work:/home/user/work
+
+    ports:
+      - "9005:9005"
+      - "3000:3000"
