@@ -7,7 +7,9 @@ RUN apt-get update -qq \
   gcc build-essential git  nodejs npm
 
 RUN npm install n -g && n stable \
-  apt-get purge -y nodejs npm && npm i -g firebase-tools
+  apt-get purge -y nodejs npm 
+
+RUN npm i -g firebase-tools
 ARG username=user
 ARG wkdir=/home/${username}/work
 RUN echo "root:root" | chpasswd && \
