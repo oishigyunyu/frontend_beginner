@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "webpack-dev-server --mode development --content-base ./dist --hot --inlinr --colors --port 3000 --open",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -23,6 +24,8 @@
     "@types/react-dom": "^16.0.4",
     "@types/react-router": "^4.0.22",
     "@types/react-router-dom": "^4.2.4",
+    "eslint": "^4.19.1",
+    "eslint-plugin-react": "^7.28.0",
     "ts-loader": "^4.0.1",
     "tslint": "^5.9.1",
     "typescript": "^2.7.2",
