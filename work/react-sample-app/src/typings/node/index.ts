@@ -1,1 +1,1 @@
-declare module 'node'
+declare module 'node';
