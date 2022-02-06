@@ -6,7 +6,7 @@ services:
     container_name: frontend_beginner
     tty: true
     volumes:
-      - ./work:/home/user/work
+      - ./:/home/user/work/frontend_beginner
 
     ports:
       - "9005:9005"
