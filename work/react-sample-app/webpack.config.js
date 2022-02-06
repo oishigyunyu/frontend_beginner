@@ -1,16 +1,16 @@
-const webpack = require('webpack');
-const path = require('path');
+const webpack = require("webpack");
+const path = require("path");
 
 module.exports = [{
     cache: true,
     devtool: 'source-map',
     devServer: {
         historyApiFallback: true,
-    }
-    context: path.recolve(__dirname, 'src'),
-    entry: './Routes.tsx',
+    },
+    context: path.resolve(__dirname, "src"),
+    entry: "./Routes.tsx",
     output: {
-        filename: './dist/js/build.js'
+        filename: "./dist/js/build.js"
     },
     module: {
         rules: [
@@ -22,10 +22,10 @@ module.exports = [{
         ]
     },
     resolve: {
-        moudles: [
-            path.join(__dirname, 'src'),
+        modules: [
+            path.join(__dirname, "src"),
             'node_modules'
         ],
-        extensions: ['.ts', '.tsx', '.js']
+        extensions: [".ts", ".tsx", ".js"]
     }
 }];
